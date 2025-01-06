@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+:root{
+    --mainColor:#deab5f;
+    --primaryColor:#312e2e;
+}
+/* Utility styles */
+button{
+    padding:10px 30px;
+    background-color: var(--mainColor);
+    border:none;
+    cursor:pointer;
+}
+
+*{
+    margin:0px;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #100e0f;
+    color:whitesmoke;
+}
+
+/* Nav Starts */
+nav{
+    display: flex;
+    justify-content:space-around; 
+    color:whitesmoke;
+    font-family:sans-serif;
+    padding:20px;
+}
+
+/* Nav ends */
+
+li{
+    display: inline;
+    list-style: none;
+    
+}
+
+li a{
+    text-decoration: none;
+    margin-left: 10px;
+    color:inherit;
+    padding-bottom:10px;
+}
+
+li a:hover{
+     border-bottom: 2px solid var(--mainColor);
+}
+
+/* Header starts */
+.header{
+    background: url(./images/delicious-organic-coffee-still-life.jpg);
+    background-position: center;
+    background-size:cover;
+    height:100vh;
+    font-family:"Playfair",serif;
+    /* FlexBox */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+}
+
+.main-heading{
+    position: absolute;
+    top:3rem;
+    font-size:4rem;
+    word-spacing:10px;
+    margin-top:100px;
+
+}
+
+.primary-heading{
+    position: absolute;
+    bottom:8rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+}
+
+.main-btn{
+    position:absolute;
+    bottom:8rem;
+    padding:10px 30px;
+    background: var(--mainColor);
+    transform: translateY(60px);
+}
+
+#our-story{
+    height: 100vh;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-btn{
+    background: var(--mainColor);
+    padding:10px 30px;
+    margin-top:10px;
+}
+.image{
+    height:400px;
+    width:400px;
+    background: url(./images/coffee-still-life-removebg-preview.png);
+    background-position: center;
+    background-size:cover;
+}
+
+.title-style{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title{
+    font-family: "Playfair",serif;
+    font-size: 4rem;
+    transform: translateX(30px);
+}
+
+.line{
+    width:100px;
+    height:2px;
+    background:#fff;
+    transform: translateX(-10px);
+}
+
+.section-content p{
+    max-width: 500px;
+    font-family:sans-serif; 
+    margin:10px 0px; 
+}
+
+/* Coffee start */
+.coffee-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    top:10rem;
+}
+
+.content-container p{
+    max-width:500px;
+    font-family:serif;
+}
+
+.title-two{
+    font-size: 3rem;
+    font-family: "Playfair",serif;
+}
+
+.image-2{
+    background: url('./images/image-2.png');
+    background-position: center;
+    height:400px;
+    width:400px;
+}
+
+/* Coffee start */
+.products{
+    margin-top:5rem;
+}
+
+.title-three{
+    font-size:4rem;
+    margin-left:10rem;
+    margin-top:10rem;
+    margin-bottom:10rem;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.card{
+    border: 2px solid var(--mainColor);
+    padding:5px 30px;
+    height:400px;
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;  
+    border-radius:5px;
+    position:relative;
+    margin-bottom: 4rem;
+}
+
+.card:hover{
+    background-color: var(--mainColor);
+    color:whitesmoke;
+}
+
+.card-img{
+    width:200px;
+    height:200px;
+    position: relative;
+    top:-60px;
+    border:2px solid var(--mainColor);
+}
+
+.img-zero{
+    background: url(./images/flat-white.jpeg);
+    background-position:left;
+    background-size: cover;
+}
+
+.img-one{
+    background: url(./images/Americano.png);
+    background-position:center;
+    background-size: cover;
+}
+
+.img-two{
+    background: url(./images/Irish_coffee.jpg);
+    background-position:left;
+    background-size: cover;
+}
+
+.img-three{
+    background: url(./images/Macchiato.jpg);
+    background-position:left;
+    background-size: cover;
+}
+
+.img-four{
+    background: url(./images/Mocha_coffee.jpg);
+    background-position:left;
+    background-size: cover;
+}
+
+/* Coffee ends */
+
+.address{
+    display:flex;
+    flex-wrap:wrap;
+    height:30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container{
+    margin:20px;
+    max-width:300px;
+    text-align: center;
+}
+
+span{
+    color: var(--mainColor);
+}
+
+footer .para{
+    text-align: center;
+}
+
+/* Responsiveness */
+@media only screen and (max-width:768px) {
+    .main-heading,.primary-heading{
+        font-size: 3rem;
+    }    
+    .para{
+        display: none;
+        margin-bottom: .5rem;
+    }
+}
