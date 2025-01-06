@@ -1,2 +1,4 @@
 # guided-projects
-anything and everything i learned
+Anything and everything i learned
+
+`Buy me a coffee` :  https://buymecoffee2025.netlify.app/
